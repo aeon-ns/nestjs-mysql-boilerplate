@@ -1,14 +1,16 @@
 import { Module } from '@nestjs/common';
+
+/* External */
+import { MysqlModule } from './modules/mysql/mysql.module';
+
+/* Local */
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { LedgerController } from './ledger/ledger.controller';
-import { Mysql } from './connections/mysql';
-import { Db, TestTable } from './helpers/db';
 import { ResponseHelper } from './helpers/response.helper';
 
 @Module({
-  imports: [],
-  controllers: [AppController, LedgerController],
-  providers: [AppService, Mysql, Db, TestTable, ResponseHelper],
+  imports    : [MysqlModule],
+  controllers: [AppController],
+  providers  : [AppService, ResponseHelper],
 })
 export class AppModule {}
