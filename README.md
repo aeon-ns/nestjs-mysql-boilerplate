@@ -37,7 +37,7 @@ $ npm run test:cov
 
 ## Author
 
-- Author - [Nisheet Sharma](nisheet.sharma@live.in)
+- Author - Nisheet Sharma <nisheet.sharma@live.in>
 
 ## License
 
