@@ -1,6 +1,6 @@
 import { Injectable, Scope, BadRequestException, NotFoundException, UnauthorizedException, ForbiddenException, UnprocessableEntityException, InternalServerErrorException, BadGatewayException, NotAcceptableException, RequestTimeoutException, ConflictException, GoneException, PayloadTooLargeException, UnsupportedMediaTypeException, NotImplementedException, ServiceUnavailableException, GatewayTimeoutException } from '@nestjs/common';
 
-@Injectable({ scope: Scope.REQUEST })
+@Injectable({ scope: Scope.DEFAULT })
 export class ResponseHelper {
     constructor() {}
 

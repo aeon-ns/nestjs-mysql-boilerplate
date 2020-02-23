@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { Mysql } from './mysql.ts';
+import { Mysql } from './mysql';
 
 describe('Mysql', () => {
   let provider: Mysql;

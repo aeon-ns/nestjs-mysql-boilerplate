@@ -5,7 +5,7 @@ import { AccessTokenAuthGuard, TokenAuthGuard } from './guards/auth.guard';
 @Module({
     imports    : [MysqlModule],
     controllers: [],
-    providers  : [],
+    providers  : [AccessTokenAuthGuard, TokenAuthGuard],
     exports    : [AccessTokenAuthGuard, TokenAuthGuard]
 })
 export class AuthModule {}
